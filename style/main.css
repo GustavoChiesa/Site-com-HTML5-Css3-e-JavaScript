@@ -61,7 +61,7 @@ img{
     font-weight: 600;
     display: block;
     padding: 25px 0;
-    transition: .8s ease;
+    transition: .4s ease;
 }
 .header__nav a:hover {
     color: #63c6ae;   
@@ -91,7 +91,6 @@ img{
 .js .laptop-slider figure{
     opacity: 0;
     transition: 1s opacity;
-    width: 100%;
     position: absolute;
     top: 0;
     left: 0;
@@ -168,10 +167,7 @@ img{
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    
-    background: linear-gradient(45deg, white 50%, transparent 50%) left calc(50% + 20px) bottom no-repeat, 
-                linear-gradient(-45deg, white 50%, transparent 50%) left calc(50% - 20px) bottom no-repeat, 
-                url(../img/01.jpg);
+    background: bottom no-repeat, bottom no-repeat, url(../img/01.jpg);
     background-size: 40px 40px, 40px 40px, cover;
 }
 
@@ -283,13 +279,12 @@ img{
 .button-primary{
     background-color: #69c6ae;
     color: white;
+    margin-top: 15px;
 }
 .button-secundary{
     background-color: #455357;
     color: white;
 }
-
-
 
 .last-articles__title{
     background-color: #63c6ae;
@@ -344,6 +339,7 @@ img{
     font-size: 30px;
     font-style: italic;
     font-weight: normal;
+    text-align: center;
 }
 
 .quote-slideshow figcaption{
@@ -361,24 +357,35 @@ img{
     background-color: #242a2c;
     padding: 50px 0 250px;
     color: #f2f2f2;
-    font-size: 14px;
+}
+
+.footer__links{
+    margin-top: 75px;
+    padding: 0;
 }
 
 .footer__links li{
     list-style: none;
 }
+
 .footer__links a{
     color: #f2f2f2;
     display: block;
     font-weight: 600;
     text-decoration: none;
+    padding: 5px;
+}
+
+.footer__links a:hover{
+    color: #48b9a1;
+    transition: .3s;
 }
 
 .footer__logo{
     text-transform: uppercase;
 }
 
-@media screen and (min-width: 1024px){
+@media screen and (min-width: 1025px){
     .header{
         position: fixed;
     }
@@ -432,10 +439,7 @@ img{
     }
     
     .footer .container{
-        display: flex;
-    }
-    .footer .container > * {
-        margin: 1.5em;
+        display: block;
     }
 }
 
